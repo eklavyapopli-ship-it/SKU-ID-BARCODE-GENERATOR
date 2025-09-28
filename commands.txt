@@ -1,0 +1,17 @@
+FOR SKU ID>>>>
+FOR WINDOWS:
+pip install pymongo
+
+FOR MAC:
+pip3 install pymongo
+
+
+
+FOR BARCODE>>>>
+
+
+for windows:
+pip install python-barcode pillow reportlab 
+
+for mac:
+pip3 install python-barcode pillow reportlab
