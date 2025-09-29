@@ -1,6 +1,8 @@
 from pymongo import MongoClient
 import os
 from dotenv import load_dotenv
+import barcode
+from barcode.writer import ImageWriter
 load_dotenv()
 client=MongoClient(os.getenv("DATABASE"))
 db=client['employee']
@@ -39,6 +41,16 @@ for i in range(1,num+1):
     list2.clear()
     print(f"the format of SKU is ProductName-{joining1}")
     print(f"the sku id is {joining}")
+    data = joining
+
+    barcode_class = barcode.get_barcode_class('code128')
+
+    code128 = barcode_class(data, writer=ImageWriter())
+
+    filename = code128.save(f"{i}_{name}_barcode_gen")
+
+    print(f"Barcode saved as {filename}")
+
     
     
 
