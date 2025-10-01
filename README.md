@@ -1,7 +1,8 @@
-#SKU-ID-GENERATOR-AND-BARCODE-GENERATOR
+# SKU-ID-GENERATOR-AND-BARCODE-GENERATOR
 
+---
 
-Notes for Layman Users TShirt Inventory with Barcode
+## Notes for Layman Users TShirt Inventory with Barcode
 
 1. Purpose of this Project:
    a. This program helps in managing T-shirt inventory.
